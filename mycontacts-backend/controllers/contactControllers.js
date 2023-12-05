@@ -12,6 +12,7 @@ const getContacts = (req,res)=>{
 //route POST /api/contacts
 //@access is public will be changed to private when auth is enabled
 const createContact =(req,res)=>{
+    console.log("the requested body is", req.body)
     res.status(201).json({message: "Create Contacts"})
 };
 //@desc get all contacts
